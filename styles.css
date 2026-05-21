@@ -260,6 +260,7 @@ h3 {
 }
 .status { color: var(--black); }
 .status.complete { background: var(--ice); }
+.status.planned { background: var(--white); }
 .status.progress { background: var(--gold); }
 .project-meta {
   margin: 0;
