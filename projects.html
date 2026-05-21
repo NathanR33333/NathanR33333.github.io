@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kryox Studios | Projects</title>
+  <meta
+    name="description"
+    content="Completed and in-progress projects by John Nathan Ramos under Kryox Studios."
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <nav class="nav" aria-label="Primary navigation">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">K</span>
+        <span>Kryox Studios</span>
+      </a>
+
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a class="active" href="projects.html">Projects</a>
+        <a href="about.html">About / Resume</a>
+      </div>
+
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch to light theme">
+        <span id="themeLabel">Light</span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container narrow">
+        <p class="eyebrow">Projects</p>
+        <h1>Completed work and active ideas.</h1>
+        <p class="lead">
+          A clear look at what is finished, what is in progress, and what each repo is meant
+          to demonstrate.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Completed</p>
+          <h2>Finished or presentable work</h2>
+        </div>
+
+        <div class="project-list">
+          <article class="project-card">
+            <div>
+              <span class="status complete">Completed</span>
+              <h3>DCH Site</h3>
+              <p>
+                A Next.js website for Dreams Custom Homes with service sections, gallery
+                content, and business-focused presentation.
+              </p>
+            </div>
+            <dl class="project-meta">
+              <div>
+                <dt>Stack</dt>
+                <dd>Next.js, React, TypeScript, Tailwind CSS</dd>
+              </div>
+              <div>
+                <dt>Shows</dt>
+                <dd>Frontend structure, page layout, real business content</dd>
+              </div>
+            </dl>
+            <a class="button secondary" href="https://github.com/NathanR33333/DCH-site" target="_blank" rel="noreferrer">View Repo</a>
+          </article>
+
+          <article class="project-card">
+            <div>
+              <span class="status complete">Live</span>
+              <h3>Kryox Studios Portfolio</h3>
+              <p>
+                This portfolio site, built with simple HTML, CSS, and JavaScript for GitHub Pages.
+              </p>
+            </div>
+            <dl class="project-meta">
+              <div>
+                <dt>Stack</dt>
+                <dd>HTML, CSS, JavaScript</dd>
+              </div>
+              <div>
+                <dt>Shows</dt>
+                <dd>Personal branding, responsive layout, clean navigation</dd>
+              </div>
+            </dl>
+            <a class="button secondary" href="https://github.com/NathanR33333/NathanR33333.github.io" target="_blank" rel="noreferrer">View Repo</a>
+          </article>
+
+          <article class="project-card">
+            <div>
+              <span class="status complete">Design Complete</span>
+              <h3>Time Bank Exchange</h3>
+              <p>
+                A peer-to-peer skill exchange app concept using time credits instead of money.
+                The planning and system design are complete.
+              </p>
+            </div>
+            <dl class="project-meta">
+              <div>
+                <dt>Stack</dt>
+                <dd>Planned HTML, CSS, JavaScript, Java or Python</dd>
+              </div>
+              <div>
+                <dt>Shows</dt>
+                <dd>Application planning, user flow, feature design</dd>
+              </div>
+            </dl>
+            <a class="button secondary" href="https://github.com/NathanR33333/time-bank-exchange" target="_blank" rel="noreferrer">View Repo</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">In progress</p>
+          <h2>Current work</h2>
+        </div>
+
+        <div class="project-list compact">
+          <article class="project-card">
+            <div>
+              <span class="status progress">In Development</span>
+              <h3>WriterCoreOS</h3>
+              <p>
+                A story development system for characters, worlds, plot timelines, and
+                organized writing workflows.
+              </p>
+            </div>
+            <a class="button secondary" href="https://github.com/NathanR33333/writercoreos" target="_blank" rel="noreferrer">View Repo</a>
+          </article>
+
+          <article class="project-card">
+            <div>
+              <span class="status progress">Prototype Next</span>
+              <h3>Arena Fighter Concept</h3>
+              <p>
+                A game design repo focused on combat flow, stamina rules, class identity,
+                and action-based arena systems.
+              </p>
+            </div>
+            <a class="button secondary" href="https://github.com/NathanR33333/arena-fighter-concept" target="_blank" rel="noreferrer">View Repo</a>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> Kryox Studios / John Nathan Ramos</p>
+      <div class="footer-links">
+        <a href="https://github.com/NathanR33333" target="_blank" rel="noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/johnramos1927/" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a href="mailto:johnramos1129@gmail.com">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
