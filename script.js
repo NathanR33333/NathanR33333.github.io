@@ -1,26 +1,27 @@
-// Footer year
-document.getElementById("year").textContent = new Date().getFullYear();
-
-// Theme toggle (saves preference)
+const year = document.getElementById("year");
 const root = document.documentElement;
 const toggleBtn = document.getElementById("themeToggle");
+const themeLabel = document.getElementById("themeLabel");
 
-function setTheme(mode) {
-  if (mode === "light") {
-    root.classList.add("light");
-    toggleBtn.textContent = "☀️";
-    localStorage.setItem("theme", "light");
-  } else {
-    root.classList.remove("light");
-    toggleBtn.textContent = "🌙";
-    localStorage.setItem("theme", "dark");
-  }
+if (year) {
+  year.textContent = new Date().getFullYear();
 }
 
-const saved = localStorage.getItem("theme");
-setTheme(saved || "dark");
+function setTheme(mode) {
+  const isLight = mode === "light";
+
+  root.classList.toggle("light", isLight);
+  themeLabel.textContent = isLight ? "Dark" : "Light";
+  toggleBtn.setAttribute(
+    "aria-label",
+    isLight ? "Switch to dark theme" : "Switch to light theme"
+  );
+  localStorage.setItem("theme", isLight ? "light" : "dark");
+}
+
+const savedTheme = localStorage.getItem("theme");
+setTheme(savedTheme || "dark");
 
 toggleBtn.addEventListener("click", () => {
-  const isLight = root.classList.contains("light");
-  setTheme(isLight ? "dark" : "light");
+  setTheme(root.classList.contains("light") ? "dark" : "light");
 });
