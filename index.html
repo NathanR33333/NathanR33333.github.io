@@ -3,282 +3,101 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Kryox Studios | John Nathan Ramos</title>
+  <title>Kryox Studios | Home</title>
   <meta
     name="description"
-    content="Kryox Studios portfolio for John Nathan Ramos, featuring completed projects, works in progress, and software development background."
+    content="Kryox Studios is the portfolio home for John Nathan Ramos, a software development student focused on frontend projects, app planning, and game systems."
   />
   <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
-  <header class="site-header" id="top">
+  <header class="site-header">
     <nav class="nav" aria-label="Primary navigation">
-      <a class="logo" href="#top" aria-label="Kryox Studios home">
-        <span class="logo-mark">K</span>
+      <a class="brand" href="index.html">
+        <span class="brand-mark">K</span>
         <span>Kryox Studios</span>
       </a>
 
       <div class="nav-links">
-        <a href="#completed">Completed</a>
-        <a href="#progress">In Progress</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
+        <a class="active" href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="about.html">About / Resume</a>
       </div>
 
       <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch to light theme">
         <span id="themeLabel">Light</span>
       </button>
     </nav>
-
-    <section class="hero" aria-labelledby="hero-title">
-      <div class="hero-copy">
-        <p class="studio-line">Software, web, and game ideas by John Nathan Ramos</p>
-        <h1 id="hero-title">Building practical projects under the Kryox Studios name.</h1>
-        <p class="hero-text">
-          I am a software development student in San Antonio focused on frontend work,
-          practical application planning, and game systems. This is the home base for
-          my finished work, active builds, and the projects I am shaping next.
-        </p>
-
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="#completed">View Projects</a>
-          <a class="btn btn-secondary" href="https://github.com/NathanR33333" target="_blank" rel="noreferrer">GitHub</a>
-        </div>
-      </div>
-
-      <div class="studio-board" aria-label="Kryox Studios project board">
-        <div class="board-header">
-          <span class="board-dot"></span>
-          <span>Kryox Project Board</span>
-        </div>
-        <div class="board-grid">
-          <div class="board-card board-card-featured">
-            <span class="board-label">Completed</span>
-            <strong>DCH Site</strong>
-            <p>Next.js website for a custom home builder.</p>
-          </div>
-          <div class="board-card">
-            <span class="board-label">Live</span>
-            <strong>Portfolio</strong>
-            <p>GitHub Pages showcase for project work.</p>
-          </div>
-          <div class="board-card">
-            <span class="board-label">Building</span>
-            <strong>WriterCoreOS</strong>
-            <p>Story and worldbuilding system.</p>
-          </div>
-          <div class="board-card">
-            <span class="board-label">Design</span>
-            <strong>Arena Fighter</strong>
-            <p>Combat rules and prototype planning.</p>
-          </div>
-        </div>
-      </div>
-    </section>
   </header>
 
   <main>
-    <section class="section section-intro" aria-label="Portfolio overview">
-      <div class="container overview">
+    <section class="hero simple-hero">
+      <div class="container hero-grid">
         <div>
-          <span class="metric-value">AAS</span>
-          <span class="metric-label">Computer Programming</span>
-        </div>
-        <div>
-          <span class="metric-value">2028</span>
-          <span class="metric-label">Expected BS graduation</span>
-        </div>
-        <div>
-          <span class="metric-value">SA</span>
-          <span class="metric-label">San Antonio, Texas</span>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="completed">
-      <div class="container">
-        <div class="section-head">
-          <p class="section-kicker">Completed projects</p>
-          <h2>Finished work and polished project foundations.</h2>
-          <p>
-            These are the pieces I can point to as complete: live pages, finished planning
-            work, or project foundations that clearly show scope, structure, and execution.
+          <p class="eyebrow">Kryox Studios</p>
+          <h1>John Nathan Ramos</h1>
+          <p class="lead">
+            Software development student building practical web projects, app concepts,
+            and game system ideas.
           </p>
-        </div>
-
-        <div class="project-grid">
-          <article class="project-card project-card-large">
-            <div class="project-media dch-preview" aria-hidden="true">
-              <span>Dreams Custom Homes</span>
-            </div>
-            <div class="project-body">
-              <div class="project-title-row">
-                <h3>DCH Site</h3>
-                <span class="status status-complete">Completed</span>
-              </div>
-              <p>
-                A Next.js site for Dreams Custom Homes with service sections, gallery-driven
-                project pages, and a polished contractor-focused presentation.
-              </p>
-              <ul class="project-points">
-                <li>Built with Next.js, React, TypeScript, and Tailwind CSS.</li>
-                <li>Focuses on real business content, service structure, and visual credibility.</li>
-              </ul>
-              <div class="card-actions">
-                <a class="btn btn-small btn-secondary" href="https://github.com/NathanR33333/DCH-site" target="_blank" rel="noreferrer">View Repo</a>
-              </div>
-            </div>
-          </article>
-
-          <article class="project-card">
-            <div class="project-media portfolio-preview" aria-hidden="true">
-              <span>Kryox Studios</span>
-            </div>
-            <div class="project-body">
-              <div class="project-title-row">
-                <h3>Kryox Portfolio</h3>
-                <span class="status status-complete">Live</span>
-              </div>
-              <p>
-                This GitHub Pages site, built as a professional home for completed work,
-                active projects, and personal software development growth.
-              </p>
-              <div class="card-actions">
-                <a class="btn btn-small btn-secondary" href="https://github.com/NathanR33333/NathanR33333.github.io" target="_blank" rel="noreferrer">View Repo</a>
-              </div>
-            </div>
-          </article>
-
-          <article class="project-card">
-            <div class="project-media exchange-preview" aria-hidden="true">
-              <span>Time Credits</span>
-            </div>
-            <div class="project-body">
-              <div class="project-title-row">
-                <h3>Time Bank Exchange</h3>
-                <span class="status status-complete">Design Complete</span>
-              </div>
-              <p>
-                A peer-to-peer skill exchange concept using time credits instead of money,
-                completed as system planning for an application build.
-              </p>
-              <div class="card-actions">
-                <a class="btn btn-small btn-secondary" href="https://github.com/NathanR33333/time-bank-exchange" target="_blank" rel="noreferrer">View Repo</a>
-              </div>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-alt" id="progress">
-      <div class="container">
-        <div class="section-head">
-          <p class="section-kicker">In progress</p>
-          <h2>Current builds and concepts getting shaped into real products.</h2>
-          <p>
-            These projects are still moving. Some are early technical builds, while others
-            are structured design documents that are ready to become prototypes.
-          </p>
-        </div>
-
-        <div class="work-list">
-          <article class="work-row">
-            <div>
-              <span class="status status-progress">In Development</span>
-              <h3>WriterCoreOS</h3>
-            </div>
-            <p>
-              A story development platform for character profiles, worldbuilding modules,
-              plot timelines, and scalable organization for writers and game designers.
-            </p>
-            <a class="text-link" href="https://github.com/NathanR33333/writercoreos" target="_blank" rel="noreferrer">Repo</a>
-          </article>
-
-          <article class="work-row">
-            <div>
-              <span class="status status-progress">Prototype Next</span>
-              <h3>Arena Fighter Concept</h3>
-            </div>
-            <p>
-              Combat system planning for an action arena fighter with stamina rules,
-              combo flow, class identity, and risk-versus-reward gameplay.
-            </p>
-            <a class="text-link" href="https://github.com/NathanR33333/arena-fighter-concept" target="_blank" rel="noreferrer">Repo</a>
-          </article>
-
-          <article class="work-row">
-            <div>
-              <span class="status status-progress">Ongoing</span>
-              <h3>GitHub Repo Polish</h3>
-            </div>
-            <p>
-              Cleaning up project documentation, improving readmes, and organizing repos so
-              each project tells a clear story to recruiters and collaborators.
-            </p>
-            <a class="text-link" href="https://github.com/NathanR33333" target="_blank" rel="noreferrer">Profile</a>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="about">
-      <div class="container about-layout">
-        <div class="section-head about-head">
-          <p class="section-kicker">About me</p>
-          <h2>Project manager habits, developer direction.</h2>
-        </div>
-
-        <div class="about-copy">
-          <p>
-            I am currently working as a Project Manager at Posada Framing while continuing
-            my computer science path at Texas A&amp;M University-San Antonio. My construction
-            background taught me how to coordinate moving pieces, communicate clearly, and
-            follow a project from plan to execution.
-          </p>
-          <p>
-            In software, I am focused on frontend development, practical app ideas, and
-            game systems. I like projects that have structure: clean interfaces, useful
-            workflows, and a clear reason for existing.
-          </p>
-
-          <div class="skills-panel" aria-label="Technical skills">
-            <div>
-              <h3>Languages</h3>
-              <p>HTML, CSS, Java, Python</p>
-            </div>
-            <div>
-              <h3>Tools</h3>
-              <p>GitHub, VS Code, Notepad++, Windows</p>
-            </div>
-            <div>
-              <h3>Foundations</h3>
-              <p>Frontend fundamentals, object-oriented programming, version control</p>
-            </div>
+          <div class="actions">
+            <a class="button primary" href="projects.html">View Projects</a>
+            <a class="button secondary" href="about.html">About / Resume</a>
           </div>
         </div>
+
+        <aside class="hero-panel" aria-label="Quick profile">
+          <h2>Focus</h2>
+          <ul class="clean-list">
+            <li>Frontend development</li>
+            <li>Software planning</li>
+            <li>Game systems</li>
+            <li>Clean project documentation</li>
+          </ul>
+        </aside>
       </div>
     </section>
 
-    <section class="section contact-section" id="contact">
-      <div class="container contact-card">
-        <div>
-          <p class="section-kicker">Contact</p>
-          <h2>Want to talk projects or opportunities?</h2>
+    <section class="section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Start here</p>
+          <h2>What this site covers</h2>
         </div>
-        <div class="contact-links">
-          <a href="mailto:johnramos1129@gmail.com">johnramos1129@gmail.com</a>
-          <a href="https://github.com/NathanR33333" target="_blank" rel="noreferrer">GitHub</a>
-          <a href="https://www.linkedin.com/in/johnramos1927/" target="_blank" rel="noreferrer">LinkedIn</a>
+
+        <div class="link-grid">
+          <a class="info-card" href="projects.html">
+            <span class="card-label">Projects</span>
+            <h3>Completed and in-progress work</h3>
+            <p>See the repos, project status, and what each project is meant to show.</p>
+          </a>
+
+          <a class="info-card" href="about.html">
+            <span class="card-label">About / Resume</span>
+            <h3>Background and skills</h3>
+            <p>Education, technical skills, work experience, and career direction.</p>
+          </a>
+
+          <a class="info-card" href="mailto:johnramos1129@gmail.com">
+            <span class="card-label">Contact</span>
+            <h3>Reach out</h3>
+            <p>Email me about junior developer, frontend, IT, or project opportunities.</p>
+          </a>
         </div>
       </div>
     </section>
   </main>
 
   <footer class="footer">
-    <p>&copy; <span id="year"></span> Kryox Studios / John Nathan Ramos</p>
-    <a href="#top">Back to top</a>
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> Kryox Studios / John Nathan Ramos</p>
+      <div class="footer-links">
+        <a href="https://github.com/NathanR33333" target="_blank" rel="noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/johnramos1927/" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a href="mailto:johnramos1129@gmail.com">Email</a>
+      </div>
+    </div>
   </footer>
 
   <script src="script.js"></script>
